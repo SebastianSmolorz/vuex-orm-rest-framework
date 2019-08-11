@@ -4,6 +4,7 @@ module.exports = {
     'jsx',
     'json',
   ],
+  // moduleDirectories: ["node_modules", "src"],
   transform: {
      '^.+\\.(js|jsx)?$': 'babel7-jest'
   },
