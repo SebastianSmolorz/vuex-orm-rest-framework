@@ -19,7 +19,7 @@ import { YourModel } from './models'
 import {
   VuexOrmRestFrameworkPlugin,
   RestFramework
-} from 'rest-framework'
+} from 'vuex-orm-rest-framework'
 
 
 // Vuex/Vuex-ORM setup
@@ -60,6 +60,8 @@ VuexORM.use(VuexOrmRestFramework, Api)
 
 ```
 // models.js
+ import { Actions } from 'vuex-orm-rest-framework'
+
 class YourModel extends Model {
   static entity = 'users'
 
@@ -126,7 +128,7 @@ By default there are 5 actions available:
 To define an api action for a model provide a methodConf on your model.
  
  ```
- import { Actions } from 'rest-framework'
+ import { Actions } from 'vuex-orm-rest-framework'
  class YourModel extends Model {
  static entity = 'users'
  
